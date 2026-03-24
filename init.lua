@@ -35,6 +35,7 @@ vim.opt.cursorline = true
 vim.opt.showmode = false
 vim.opt.wrap = false
 vim.opt.compatible = false
+vim.opt.splitright = true
 
 -- =====================================
 -- LAZY.NVIM BOOTSTRAP
@@ -254,7 +255,7 @@ vim.keymap.set("n", "<F8>", ":w<CR>:!g++ % -o test && exit<CR>:qa<CR>", { silent
 vim.keymap.set(
   "n",
   "<F5>",
-  ":w<CR>:!gcc -fsanitize=address,undefined,leak -fno-omit-frame-pointer -g -std=c99 -Wall -Wextra -Wconversion -Wshadow -pedantic % -o test && exit || read<CR>",
+  ":w<CR>:!gcc -fsanitize=address,undefined,leak -fno-omit-frame-pointer -g3 -std=c99 -Wall -Wextra -Wconversion -Wshadow -pedantic % -o test && exit || read<CR>",
   { silent = false }
 )
 vim.keymap.set("n", "L", vim.lsp.buf.hover, { noremap = true, silent = true })
@@ -275,3 +276,7 @@ end, { silent = true })
 vim.keymap.set("n", "<leader>gi", function()
   require("nvim-tree.api").tree.toggle_gitignore_filter()
 end, { desc = "Toggle GitIgnore Files in NvimTree", silent = true })
+
+-- Map Esc in terminal to exit to normal mode
+vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', { noremap = true, silent = true })
+vim.cmd('cnoreabbrev term vsplit \\| term')
