@@ -8,3 +8,76 @@
 - [x] ripgrep (rg)
 - [x] fd
 - [x] make / cmake
+
+# Neovim Custom Keybindings
+
+Leader key: `Space`
+
+---
+
+## Telescope / LSP Navigation
+
+| Key | Mode | Action |
+|-----|------|--------|
+| `<leader>fa` | Normal | Search workspace symbols (Class, Struct, Function, Method, Variable, Field) |
+| `<leader>fd` | Normal | Search document symbols |
+| `<leader>ff` | Normal | Find files |
+| `<leader>fg` | Normal | Live grep |
+| `<leader>fb` | Normal | List open buffers |
+| `gd` | Normal | Go to LSP definitions |
+| `gr` | Normal | Go to LSP references |
+| `gi` | Normal | Go to LSP implementations |
+
+---
+
+## Nvim-Tree
+
+| Key | Mode | Action |
+|-----|------|--------|
+| `<leader>t` | Normal | Toggle NvimTree |
+| `<leader>v` | Normal | Open node in vertical split (buffer-local) |
+| `<leader>s` | Normal | Open node in horizontal split (buffer-local) |
+| `<leader>gi` | Normal | Toggle GitIgnore files filter |
+
+---
+
+## Diagnostics
+
+| Key | Mode | Action |
+|-----|------|--------|
+| `K` | Normal | Show diagnostics float (no focus) |
+| `<leader>xx` | Normal | Populate quickfix list with diagnostics and open `:copen` |
+
+---
+
+## Compilation / Build
+
+| Key | Mode | Action |
+|-----|------|--------|
+| `<F8>` | Normal | Save and compile with `g++ % -o test` |
+| `<F5>` | Normal | Save and compile with GCC + sanitizers |
+
+---
+
+## Line Navigation
+
+| Key | Mode | Action |
+|-----|------|--------|
+| `$` | Normal | Jump to last non-blank character (`g_`) |
+| `g$` | Normal | Jump to real end of line (`$`) |
+
+---
+
+## Terminal Mode
+
+| Key | Mode | Action |
+|-----|------|--------|
+| `<Esc>` | Terminal | Exit terminal to Normal mode |
+
+---
+
+## Hover / Info
+
+| Key | Mode | Action |
+|-----|------|--------|
+| `L` | Normal | LSP hover/info + optional diagnostics (silent) |
