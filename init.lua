@@ -1,4 +1,4 @@
--- ==========================================================================
+-- ========================================================================== 
 -- POLYGLOT / C-ENHANCED BOOST LINES
 -- ==========================================================================
 vim.g.c_syntax_for_h = 1                    -- Treat .h files as C
@@ -282,4 +282,5 @@ vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', { noremap = true, silent = 
 vim.cmd('cnoreabbrev term vsplit \\| term')
 
 vim.keymap.set("n", "$", "g_", { desc = "Last non-blank char" })
+vim.keymap.set("n", "v$", "vg_", { desc = "Last non-blank char" })
 vim.keymap.set("n", "g$", "$", { desc = "Real end of line" })
