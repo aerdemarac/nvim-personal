@@ -8,6 +8,7 @@
 - [x] ripgrep (rg)
 - [x] fd
 - [x] make / cmake
+- [x] bat
 
 # Neovim Custom Keybindings
 
