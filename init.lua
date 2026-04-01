@@ -36,7 +36,8 @@ vim.opt.showmode = false
 vim.opt.wrap = false
 vim.opt.compatible = false
 vim.opt.splitright = true
-
+vim.o.autoindent = true
+vim.o.smartindent = true
 -- =====================================
 -- LAZY.NVIM BOOTSTRAP
 -- =====================================
@@ -284,3 +285,6 @@ vim.cmd('cnoreabbrev term vsplit \\| term')
 vim.keymap.set("n", "$", "g_", { desc = "Last non-blank char" })
 vim.keymap.set("n", "v$", "vg_", { desc = "Last non-blank char" })
 vim.keymap.set("n", "g$", "$", { desc = "Real end of line" })
+-- Visual line mode: make p behave like ]p
+vim.keymap.set('x', 'p', [["_d]] .. "normal! ]p", { noremap = true, silent = true })
+vim.keymap.set('x', 'P', [["_d]] .. "normal! [P", { noremap = true, silent = true })

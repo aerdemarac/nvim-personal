@@ -7,5 +7,7 @@ alias cc='gcc -fsanitize=address,undefined,leak -fno-omit-frame-pointer -g3 -std
 alias app='./app'
 alias cat='batcat -p'
 export WIN=/mnt/c/Users/ProducerDJ/Desktop
-export LUA=~/.config/nvim
+export LUA=~/.config/nvim/init.lua
+export REP=~/repos/
+export RC=~/.bashrc
 cd && clear
