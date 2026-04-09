@@ -9,6 +9,7 @@
 - [x] fd
 - [x] make / cmake
 - [x] bat
+- [x] lsd
 
 # Neovim Custom Keybindings
 
