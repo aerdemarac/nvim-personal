@@ -7,7 +7,7 @@ alias cc='gcc -fsanitize=address,undefined,leak -fno-omit-frame-pointer -g3 -std
 alias app='./app'
 alias cat='batcat -p'
 alias cppcheck='cppcheck --std=c99 --enable=all --inconclusive'
-alias fastfetch ='clear && fastfetch'
+alias clear='clear && fastfetch -l ubuntu_old'
 alias l='lsd'
 alias ls='lsd'
 export WIN=/mnt/c/Users/ProducerDJ/Desktop
@@ -17,5 +17,5 @@ export REP=~/repos/
 export RC=~/.bashrc
 export CLAN=~/.clangd
 export LS_COLORS=$LS_COLORS:'di=38;5;33:'
-cd && clear
+cd && \clear
 fastfetch -l ubuntu_old

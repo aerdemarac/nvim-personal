@@ -100,6 +100,17 @@ require("lazy").setup({
     "nvim-telescope/telescope.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
   },
+  {
+  "ghillb/cybu.nvim",
+  branch = "main", -- timely updates
+  -- branch = "v1.x", -- won't receive breaking changes
+  dependencies = { "nvim-tree/nvim-web-devicons", "nvim-lua/plenary.nvim" }, -- optional for icon support
+  keys = {
+    { "K", "<Plug>(CybuPrev)", mode = "n", desc = "Cybu Prev" },
+    { "J", "<Plug>(CybuNext)", mode = "n", desc = "Cybu Next" },
+  },
+  opts = {}, -- automatically calls require("cybu").setup()
+  },
    {
     "catppuccin/nvim",
     name = "catppuccin",
@@ -204,7 +215,7 @@ require("nvim-tree").setup({
 })
 vim.keymap.set("n", "<leader>t", ":NvimTreeToggle<CR>", { silent = true })
 
-vim.keymap.set("n", "K", function()
+vim.keymap.set("n", "S", function()
   vim.diagnostic.open_float(0, { focus = false })
 end)
 
@@ -251,6 +262,3 @@ vim.cmd('cnoreabbrev term vsplit \\| term')
 vim.keymap.set("n", "$", "g_", { desc = "Last non-blank char" })
 vim.keymap.set("n", "v$", "vg_", { desc = "Last non-blank char" })
 vim.keymap.set("n", "g$", "$", { desc = "Real end of line" })
-
-vim.keymap.set('x', 'p', '"_d]p', { noremap = true, silent = true })
-vim.keymap.set('x', 'P', '"_d[P', { noremap = true, silent = true })

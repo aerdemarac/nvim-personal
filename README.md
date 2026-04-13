@@ -47,7 +47,7 @@ Leader key: `Space`
 
 | Key | Mode | Action |
 |-----|------|--------|
-| `K` | Normal | Show diagnostics float (no focus) |
+| `L` | Normal | Show diagnostics float (no focus) || Info about variable or method| 
 | `<leader>xx` | Normal | Populate quickfix list with diagnostics and open `:copen` |
 
 ---
@@ -67,6 +67,15 @@ Leader key: `Space`
 |-----|------|--------|
 | `$` | Normal | Jump to last non-blank character (`g_`) |
 | `g$` | Normal | Jump to real end of line (`$`) |
+
+---
+
+## Buffer Navigation
+
+| Key | Mode | Action |
+|-----|------|--------|
+| `K` | Normal | Jump to previous buffer like alt+tab |
+| `J` | Normal | Jump to next buffer like alt+tab |
 
 ---
 
