@@ -15,7 +15,7 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 vim.opt.number = true
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
@@ -235,7 +235,7 @@ vim.keymap.set(
 vim.keymap.set(
   "n",
   "<F6>",
-  ":w<CR>:!gcc -g3 -O0 -std=c99 -Wall -Wextra -Wconversion -Wshadow -pedantic-errors % -o test && read<CR>",
+  ":w<CR>:!gcc -fsanitize=address,undefined -fno-omit-frame-pointer -g3 -std=c99 -Wall -Wextra -Wconversion -Wshadow -pedantic-errors % -o test && exit || read<CR>",
   { silent = false }
 )
 

@@ -11,7 +11,6 @@ alias cppcheck='cppcheck --std=c99 --enable=all --inconclusive'
 alias clear='clear && fastfetch -l ubuntu_old'
 alias l='lsd --group-directories-first'
 alias ls='lsd --group-directories-first'
-alias view='feh' 
 export WIN=/mnt/c/Users/ProducerDJ/Desktop
 export LUA=~/.config/nvim/init.lua
 export LUA_DIR=~/.config/nvim/
@@ -20,3 +19,5 @@ export RC=~/.bashrc
 export CLAN=~/.clangd
 export LS_COLORS=$LS_COLORS:'di=38;5;33:'
 cd && \clear
+fastfetch -l ubuntu_old
+alias view='feh' 
