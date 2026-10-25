@@ -1,18 +1,21 @@
 # External Dependencies (Pre-Lua-Setup)
 
 - [x] Neovim ≥ 0.9
-- [x] Git
+- [x] git
+- [x] gh
 - [x] clangd
 - [x] gcc / g++ (build-essential)
 - [x] clang-tidy
 - [x] ripgrep (rg)
-- [x] fd
+- [x] fd -- fast grep
 - [x] make / cmake
-- [x] bat
+- [x] batcat
 - [x] lsd
 - [x] bear
-- [x] feh
+- [x] feh -- image wiever
 - [x] hexedit
+- [x] tig -- git visualize
+- [x] marklite -- md viewer
 
 # Neovim Custom Keybindings
 
